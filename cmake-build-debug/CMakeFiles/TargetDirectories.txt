@@ -1,0 +1,3 @@
+C:/Users/ASUS/Documents/GitHub/Company-management/cmake-build-debug/CMakeFiles/Company_management.dir
+C:/Users/ASUS/Documents/GitHub/Company-management/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/ASUS/Documents/GitHub/Company-management/cmake-build-debug/CMakeFiles/rebuild_cache.dir
