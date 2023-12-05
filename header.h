@@ -13,7 +13,8 @@ struct date{
 
 struct employee
 {
-    char name[50];
+    char firstName[50];
+    char lastName[50];
     int employeeNumber = 0;
     int wage;
     date dateOfHiring;
@@ -27,9 +28,13 @@ void addEmployee(employee* newEmployee){
     int number, wage, year, month, day;
 
 
-    printf("Name of employee(spaces are written with _):");
+    printf("First name:");
     scanf("%s", name);
-    strcpy(newEmployee->name, name);
+    strcpy(newEmployee->firstName, name);
+
+    printf("Last name:");
+    scanf("%s", name);
+    strcpy(newEmployee->lastName, name);
 
     printf("\nemployeeNumber:");
     scanf("%d", &number);
@@ -143,7 +148,7 @@ void addEmployee(employee* newEmployee){
 }
 
 void ListEmployee(employee* newEmployee){
-    printf("Name: %s \n ", newEmployee->name);
+    printf("Name: %s %s \n ", newEmployee->firstName , newEmployee->lastName);
     printf("date of birth: %d/%d/d \n ", newEmployee->dateOfBirth.day , newEmployee->dateOfBirth.month, newEmployee->dateOfBirth.year);
     printf("Employee number: %d \n ", newEmployee->employeeNumber);
     printf("Employee wage: %d \n", newEmployee->wage);
